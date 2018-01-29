@@ -1,0 +1,9 @@
+---
+ - hosts: localhost
+   tasks:
+    - name: finding ami by region and name 
+      ec2_key:
+       name: sheershakey
+       state: absent
+      register: key
+
